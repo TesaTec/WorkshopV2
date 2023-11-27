@@ -1,8 +1,5 @@
 package Domain;
 
-<<<<<<< Updated upstream
-public class Building {
-=======
 import java.util.ArrayList;
 import java.util.UUID;
 
@@ -36,5 +33,5 @@ public class Building extends Unit{
     public void removeActuator(UUID id) {
 
     }
->>>>>>> Stashed changes
+
 }

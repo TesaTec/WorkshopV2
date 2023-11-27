@@ -15,7 +15,7 @@ public class BuildingManagementSystem {
     }
     public void removeBuilding(UUID id) {
         for(int i = 0; i < buildings.size(); i++) {
-            if(buildings.get(i).getId == id) {
+            if(buildings.== id) {
                 buildings.remove(i);
                 return;
             }
