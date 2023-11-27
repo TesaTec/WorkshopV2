@@ -13,7 +13,8 @@ public abstract class Unit {
         return this.name;
     }
     Unit(String name){
-        UUID.fromString(name);
+        this.id = UUID.randomUUID();
+        this.name = name;
     }
 
     abstract public String toString();
