@@ -7,14 +7,20 @@ public class Building extends Unit{
     private ArrayList<Sensor> sensors = new ArrayList<Sensor>();
     private ArrayList<Actuator> actuators = new ArrayList<Actuator>();
 
-    public ArrayList<Sensor> getSensors() {
+    Building(String name) {
+        super(name);
+    }
 
+    public ArrayList<Sensor> getSensors() {
+        return sensors;
     }
 
     public ArrayList<Actuator> getActuators(){
-
+        return actuators;
     }
     public UUID addTempeatureSensor(String name) {
+        sensors.add(new TemperatureSensor(name));
+        
 
     }
 
@@ -34,4 +40,8 @@ public class Building extends Unit{
 
     }
 
+    @Override
+    public String toString() {
+        return null;
+    }
 }

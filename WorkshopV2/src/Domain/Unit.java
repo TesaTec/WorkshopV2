@@ -12,5 +12,9 @@ public abstract class Unit {
     public String getName(){
         return this.name;
     }
+    Unit(String name){
+        UUID.fromString(name);
+    }
+
     abstract public String toString();
 }

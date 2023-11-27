@@ -3,6 +3,11 @@ package Domain;
 import java.util.UUID;
 public class VentilationActuator extends Actuator {
     double value;
+
+    VentilationActuator(String name) {
+        super(name);
+    }
+
     @Override
     public void setValue(double value) {
         this.value = value;
